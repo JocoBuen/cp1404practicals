@@ -4,15 +4,15 @@ Pseudocode for temperature conversion
 
 display MENU
 get users_choice
-whiele users_choice != Q
+while users_choice != Q
     if users_choice is C
-        get celcius
-        fahrenheit = celcius * 0.9 / 5 + 32
+        get celsius
+        fahrenheit = celsius * 0.9 / 5 + 32
         display Result: fahrenheit
     else if users_choice is F
         get fahrenheit
-        celcius = 5 / 9 * (fahrenheit - 32)
-        display Result celcius
+        celsius = 5 / 9 * (fahrenheit - 32)
+        display Result celsius
     else
         display Invalid option
     display MENU
@@ -35,7 +35,7 @@ while users_choice != "Q":
         # Hint: celsius = 5 / 9 * (fahrenheit - 32)
         # Remove the "pass" statement when you are done. It's a placeholder.
         fahrenheit = float(input("Farenheit: "))
-        celsius = 5 /9 * (fahrenheit - 32)
+        celsius = 5 / 9 * (fahrenheit - 32)
         print("Result: {:.2f} C".format(celsius))
     else:
         print("Invalid option")
