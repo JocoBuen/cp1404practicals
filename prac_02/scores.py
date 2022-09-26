@@ -7,7 +7,7 @@ display score
 generate random_score
 display random_score
 
-determine_score
+function determine_score
     if score > 100 or score < 0
         return "Invalid score"
     else if score >= 90
