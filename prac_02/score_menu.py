@@ -68,9 +68,7 @@ def main():
 
 # This function will determine the score
 def determine_score(score):
-    if score > 100 or score < 0:
-        return "Invalid score"
-    elif score >= 90:
+    if score >= 90:
         return "Excellent"
     elif score >= 50:
         return "Passable"
