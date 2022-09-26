@@ -1,16 +1,12 @@
-"""Print grid program"""
-
-
-def main():
-    print_grid(3, 7)
-
-
-def print_grid(number_of_rows, number_of_columns):
-    """Function docstring"""
-    for row in range(0, number_of_rows, 1):
-        for column in range(0, number_of_columns, 1):
-            print("*", end="")
-        print()
-
-
-main()
+"""
+get password
+while length of password < 6 or blank in password
+    display Invalid password
+star_password = length of password * "*"
+display star_password
+"""
+users_password = input("Enter password: ")
+while len(users_password) < 6 or " " in users_password:
+    print("Invalid Password")
+    users_password = input("Enter password: ")
+print("*" * len(users_password))
