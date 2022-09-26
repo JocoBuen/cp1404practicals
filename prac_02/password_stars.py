@@ -8,11 +8,20 @@ display star_password
 
 
 def main():
-    users_password = input("Enter password: ")
-    while len(users_password) < 6 or " " in users_password:
+    password = get_password()
+    display_password_in_asterisk(password)
+
+
+def display_password_in_asterisk(password):
+    print("*" * len(password))
+
+
+def get_password():
+    password = input("Enter password: ")
+    while len(password) < 6 or " " in password:
         print("Invalid Password")
-        users_password = input("Enter password: ")
-    print("*" * len(users_password))
+        password = input("Enter password: ")
+    return password
 
 
 main()
