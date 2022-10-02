@@ -16,9 +16,10 @@ MAX_PRICE = 100.0
 INITIAL_PRICE = 10.0
 OUTPUT_FILE = "stock_price.txt"
 
+out_file = open(OUTPUT_FILE, 'w')
+
 price = INITIAL_PRICE
 number_of_days = 0
-out_file = open(OUTPUT_FILE, 'w')
 print(f"Starting price: ${price:.2f}", file=out_file)
 # print("${:,.2f}".format(price))
 while price >= MIN_PRICE and price <= MAX_PRICE:
