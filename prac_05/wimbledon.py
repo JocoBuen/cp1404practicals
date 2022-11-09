@@ -8,6 +8,7 @@ FILENAME = "wimbledon.csv"
 
 def main():
     records = get_records(FILENAME)
+    print(records)
     champion_to_count = count_the_champions(records)
     countries = get_the_country_of_champions(records)
     for champion, count in champion_to_count.items():
