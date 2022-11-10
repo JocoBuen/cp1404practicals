@@ -26,8 +26,22 @@ while choice != "q":
     elif choice == "s":
         pass
     elif choice == "d":
-        for project in projects:
-            print(project)
+        incomplete_projects = []
+        complete_projects = []
+        if projects:
+            projects.sort()
+            for project in projects:
+                if project.is_complete():
+                    complete_projects.append(project)
+                else:
+                    incomplete_projects.append(project)
+            print("Incomplete Projects")
+            for i in incomplete_projects:
+                print(i)
+            print("Complete Projects")
+            for i in complete_projects:
+                print(i)
+
     elif choice == "f":
         pass
     elif choice == "a":
